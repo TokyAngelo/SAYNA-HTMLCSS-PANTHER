@@ -30,7 +30,7 @@
 body {
   font-family: "Cantarell";
   /* background-color: var(--sixthColor); */
-  background-image: url('../Assets/All pages/arrière_plan.png');
+  background-image: url('../Assets/All/arrière_plan.png');
   background-size: cover;
 }
 
@@ -70,14 +70,48 @@ h2:not(footer .social_side h2){
   font-size: 32px;
   color: var(--secondarycolor);
 }
+.barre{
+  margin-top: -150px;
+  position: absolute;
+  display: flex;
+}
+.barre .vertical_full{
+  width: 4px;
+  height: 370px;
+  background-color:var(--secondarycolor);
+}
+.barre .vertical_min{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  align-items: center;
+}
+.barre .vertical_min .barre_min{
+  width: 4px;
+  height: 200px;
+  background-color:var(--secondarycolor);
+
+}
+.barre .vertical_min .social_media{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin-left: -10px */
+}
+.barre .vertical_min .social_media img{
+  margin-top: 21px;
+  cursor: pointer;
+}
+
 /* Debut de la première section les propos de Black Panther */
-main .panther_section {
+main .panther_section{
   width: 100%;
   height: 90vh;
   background-image: url("../Assets/Accueil/Pantherhome1.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 500px 0px;
+
 }
 .panther_section .black_panther{
   width: 45%;
@@ -159,6 +193,7 @@ main .panther_section {
   display: block;
   margin: 0 auto;
   width: 70%;
+  margin-top: -10px;
   z-index: 0;
 }
 .container .tchala_bio .front_face{
@@ -269,7 +304,7 @@ main .form_section .displayForm .formLogin .btn:hover{
   box-shadow: 0 0 20px var(--sixthColor);
 }
 footer{
-  background-image: url("../Assets/All pages/back_footer.png");
+  background-image: url("../Assets/All/back_footer.png");
   background-size: cover;
 }
 .footer{
@@ -296,15 +331,18 @@ footer .social_side .icon_container{
   margin-top: -20px;
 }
 footer .social_side h2{
-  
+
+  color: var(--whiteColor);
   font-size: 22px;
   text-align: center;
-  letter-spacing: 28%;
+  letter-spacing: 12px;
 
 }
 footer .social_side .icon_container img{
+  cursor: pointer;
   margin: 15px;
 }
+
 footer .sayna_footer{
   position: relative;
   left:-55%;
@@ -313,6 +351,6 @@ footer .sayna_footer{
 footer .policy{
   position: relative;
   color: var(--whiteColor);
-  bottom: 200px;
-  left: 50%;
+  margin-left: 50%;
+  top: -200px;
 }
