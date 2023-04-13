@@ -29,7 +29,6 @@
 }
 body {
   font-family: "Cantarell";
-  /* background-color: var(--sixthColor); */
   background-image: url('../Assets/All/arrière_plan.png');
   background-size: cover;
 }
@@ -38,6 +37,10 @@ header .header_icons {
   margin: 20px 40px;
   display: flex;
   align-items: center;
+}
+header .header_icons:hover{
+  filter: sepia(2000%) invert(100%) brightness(7000%) contrast(50%);
+  cursor: pointer;
 }
 header nav {
   display: flex;
@@ -63,7 +66,7 @@ header nav ul li a:hover{
   text-decoration: underline;
   font-weight: bold;
 }
-header nav ul li a:visited{
+header nav ul li a:focus-within{
   text-decoration: underline;
   font-weight: bold;
 }
@@ -71,6 +74,17 @@ h1{
   font-family: 'panthera';
   font-size: 68px;
   color: var(--secondarycolor);
+}
+div, video, span,h1, h2, p, img,a{
+  animation :title 2s ease-in;
+}
+@keyframes title{
+  0%{
+    margin-left: -10%;
+    opacity: 0;
+  }100%{
+    opacity: 1;
+  }
 }
 h2:not(footer .social_side h2){
   font-family: 'beyno';
@@ -108,6 +122,9 @@ h2:not(footer .social_side h2){
 .barre .vertical_min .social_media img{
   margin-top: 21px;
   cursor: pointer;
+}
+.barre .vertical_min .social_media img:hover{
+  filter: sepia(100%) invert(100%) brightness(1000%);
 }
 
 /* Debut de la première section les propos de Black Panther */
@@ -337,6 +354,7 @@ footer .social_side .icon_container{
   padding: 0;
   margin-top: -20px;
 }
+
 footer .social_side h2{
 
   color: var(--whiteColor);
@@ -349,7 +367,12 @@ footer .social_side .icon_container img{
   cursor: pointer;
   margin: 15px;
 }
-
+footer .social_side .icon_container img:hover,
+footer .marvel_side:hover{
+  cursor: pointer;
+  transition: .5s;
+  transform: scale(110%);
+}
 footer .sayna_footer{
   position: relative;
   left:-55%;

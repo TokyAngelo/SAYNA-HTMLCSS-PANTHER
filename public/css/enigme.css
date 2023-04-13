@@ -4,6 +4,7 @@ main .okoye_section{
     display: flex;
 
 }
+/* Design de la section Okoye */
 main .okoye_section .okoye_image{
     background-image: url('../Assets/Enigme/Pantherenigme1.png');
     background-size: contain;
@@ -42,6 +43,11 @@ main .okoye_section .text_for_okoye img{
 }
 main .crypted_text{
     margin:  100px 100px;
+}
+main .image{
+    display: block;
+    position: relative;
+    margin-bottom: -400px;
 }
 main .crypted_text .crypted_title{
     width:70% ;
@@ -97,6 +103,11 @@ main .crypted_text #reponse{
     border: 1px solid var(--primaryColor);
     border-radius: 38px;
     background-color: transparent;
+}
+main .crypted_text #reponse::placeholder{
+    color: var(--primaryColor);
+    font-family: 'cantarell';
+    font-size: 11px;
 }
 main .crypted_text .response_form .btn{
     margin-top: 80px;
