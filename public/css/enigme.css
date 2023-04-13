@@ -40,3 +40,74 @@ main .okoye_section .text_for_okoye img{
     /* margin-left: -100px; */
     margin-top: -280px;
 }
+main .crypted_text{
+    margin:  100px 100px;
+}
+main .crypted_text .crypted_title{
+    width:70% ;
+    font-family:'wakanda';
+}
+main .crypted_text .display_div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+main .crypted_text .display_div p{
+    font-family: 'cantarell';
+    color: var(--whiteColor);
+}
+main .crypted_text .display_div .alphabet{
+    text-transform: uppercase;
+}
+main .crypted_text div{
+    width: 45%;
+}
+main .crypted_text .after_crypted_text {
+    margin-top: 200px;
+}
+main .crypted_text .after_crypted_text .last_parag{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+}
+main .crypted_text .display_div img{
+    margin-top: -50%;
+    position:relative;
+    width: 120%;
+    /* margin-left: -50px; */
+    transform: rotate(5deg);
+}
+main .crypted_text .response_form{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+main .crypted_text .response_form label{
+    color: var(--primaryColor);
+    font-family: 'cantarell';
+}
+main .crypted_text .response_form input{
+    margin-top: 20px;
+}
+main .crypted_text #reponse{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 38px;
+    background-color: transparent;
+}
+main .crypted_text .response_form .btn{
+    margin-top: 80px;
+    width: 30%;
+    padding: 10px 10px;
+    align-self: center;
+    border: none;
+    color: var(--whiteColor);
+    border-radius: 38px;
+    background-color: var(--thirdColor);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'cantarell';
+}

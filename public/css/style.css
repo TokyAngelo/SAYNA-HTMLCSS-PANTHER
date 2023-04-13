@@ -59,7 +59,14 @@ header nav ul li a {
   color: #FFFFFF;
   font-family: "beyno";
 }
-
+header nav ul li a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+header nav ul li a:visited{
+  text-decoration: underline;
+  font-weight: bold;
+}
 h1{
   font-family: 'panthera';
   font-size: 68px;
