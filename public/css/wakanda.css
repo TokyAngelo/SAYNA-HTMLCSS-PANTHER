@@ -2,4 +2,8 @@
 
 main .wakanda_section{
     background-image: url('../Assets/Wakanda/Pantherwakanda1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
 }
