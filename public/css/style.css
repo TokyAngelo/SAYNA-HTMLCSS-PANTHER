@@ -27,6 +27,10 @@
   font-family: beyno;
   src: url('../Fonts/FontsFree-Net-BEYNO.ttf');
 }
+@font-face {
+  font-family: wakandaforever;
+  src: url('../Fonts/wakandaforever-regular.ttf');
+}
 body {
   font-family: "Cantarell";
   background-image: url('../Assets/All/arrière_plan.png');

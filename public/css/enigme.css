@@ -51,7 +51,7 @@ main .image{
 }
 main .crypted_text .crypted_title{
     width:70% ;
-    font-family:'wakanda';
+    font-family:'wakandaforever';
 }
 main .crypted_text .display_div{
     display: flex;
@@ -121,4 +121,13 @@ main .crypted_text .response_form .btn{
     cursor: pointer;
     text-transform: uppercase;
     font-family: 'cantarell';
+}
+main .crypted_text .response_form .btn:hover{
+    box-shadow: 2px 2px 20px var(--primaryColor);
+    filter: blur(20);
+}
+main section  .wakanda_transform{
+    font-family: 'wakandaforever';
+    text-transform: uppercase;
+    font-family: 40px;
 }
